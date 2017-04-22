@@ -1,5 +1,5 @@
 #######################################
-# FastPlot
+# PlotPlus
 #######################################
 
 #######################################
@@ -11,14 +11,14 @@
 #######################################
 
 plot	KEYWORD2
-__plot	KEYWORD2
-_simple_plot_	KEYWORD2
+plotWith	KEYWORD2
 plot1	KEYWORD2
 plot2	KEYWORD2
 plot3	KEYWORD2
 plot4	KEYWORD2
 plot5	KEYWORD2
 plot6	KEYWORD2
+_simple_plot_	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
