@@ -1,7 +1,5 @@
 PlotPlus [![Build Status][travis-status]][travis]
 =============
-
-
 [travis]: https://travis-ci.org/rlogiacco/PlotPlus
 [travis-status]: https://travis-ci.org/rlogiacco/PlotPlus.svg?branch=master
 
