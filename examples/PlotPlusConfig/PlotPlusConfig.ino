@@ -6,6 +6,10 @@ SoftwareSerial Soft(10, 11);
 // with the provided SoftwareSerial instance
 #define PLOT_PLUS_STREAM Soft
 
+// uncomment the following to completely disable the plot statements
+//#define PLOT_PLUS false
+
+
 #include <PlotPlus.h>
 
 void setup() {
