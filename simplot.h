@@ -18,7 +18,7 @@
 #define SIMPLOT_H_
 
 
-#include "SimPlotPlus.h"
+#include "PlotPlus.h"
 
 
 #define _simple_plot_(output, numData, data1, data2, data3, data4, data5, data6) \
