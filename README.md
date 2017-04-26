@@ -3,6 +3,8 @@ PlotPlus [![Build Status][travis-status]][travis]
 [travis]: https://travis-ci.org/rlogiacco/PlotPlus
 [travis-status]: https://travis-ci.org/rlogiacco/PlotPlus.svg?branch=master
 
+This work is largerly based on the [SimPlot Arduino library](https://github.com/jantje/ArduinoLibraries/tree/master/simplot) authored by my friend [jantje](https://github.com/jantje) who is also the author of [Sloeber](http://sloeber.io), the best IDE for Arduino out there!
+
 Once upon a time there was SimPlot, a plotting tool working side by side with a plotting library available for many platforms, including Arduino.
 
 That library, while still available for use, has become quite difficult to retrieve and it's not listed by the Arduino Library Manager, which makes it even more hidden than before.
@@ -164,4 +166,6 @@ Clients
 
 My client of choice is [Sloeber](http:///sloeber.io), an Eclipse Plugin providing full development support for Arduino and other MCUs like ESP8266 and similar. This should be also your favorite choice if you are on an OS other than Windows.
 
-If you look for something more lightweight then the old [SimPlot client for Windows](http://sray.med.som.jhmi.edu/SCRoftware/simplot/) should satisfy your needs.
+[Sloeber](http:///sloeber.io) has a very nice 6 channels plotter view and the ability to filter out the plotting info from the serial console resulting a very smooth experience.
+
+If you look for something more lightweight then the old [SimPlot client for Windows](https://github.com/infomaniac50/projectsimplot) should satisfy your needs.
