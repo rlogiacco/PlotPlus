@@ -11,23 +11,21 @@ That library, while still available for use, has become quite difficult to retri
 
 This is an attempt to bring that library back to life while also trying to improve its API.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+<!-- toc -->
 
 - [Preamble](#preamble)
 - [Usage](#usage)
-  - [Modern API](#modern-api)
-    - [Import and configure](#import-and-configure)
-    - [Setup](#setup)
-    - [Data plotting](#data-plotting)
-  - [Classical API](#classical-api)
-    - [Import and configure](#import-and-configure-1)
-    - [Setup](#setup-1)
-    - [Data plotting](#data-plotting-1)
+  * [Modern API](#modern-api)
+    + [Import and configure](#import-and-configure)
+    + [Setup](#setup)
+    + [Data plotting](#data-plotting)
+  * [Classical API](#classical-api)
+    + [Import and configure](#import-and-configure-1)
+    + [Setup](#setup-1)
+    + [Data plotting](#data-plotting-1)
 - [Clients](#clients)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- tocstop -->
 
 Preamble
 ============
