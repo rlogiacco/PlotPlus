@@ -3,9 +3,9 @@ PlotPlus [![Build Status][travis-status]][travis]
 [travis]: https://travis-ci.org/rlogiacco/PlotPlus
 [travis-status]: https://travis-ci.org/rlogiacco/PlotPlus.svg?branch=master
 
-This work is largerly based on the [SimPlot Arduino library](https://github.com/jantje/ArduinoLibraries/tree/master/simplot) authored by my friend [jantje](https://github.com/jantje) who is also the author of [Sloeber](http://sloeber.io), the best IDE for Arduino out there!
+This work is largely based on the [SimPlot Arduino library](https://github.com/jantje/ArduinoLibraries/tree/master/simplot) authored by my friend [jantje](https://github.com/jantje) who is also the author of [Sloeber](http://sloeber.io), the best IDE for Arduino out there!
 
-Once upon a time there was SimPlot, a plotting tool working side by side with a plotting library available for many platforms, including Arduino.
+Once upon a time, there was SimPlot, a plotting tool working side by side with a plotting library available for many platforms, including Arduino.
 
 That library, while still available for use, has become quite difficult to retrieve and it's not listed by the Arduino Library Manager, which makes it even more hidden than before.
 
@@ -30,8 +30,8 @@ This is an attempt to bring that library back to life while also trying to impro
 Preamble
 ============
 
-Data plotting can be quite challenging for micro controllers as those devices are commonly unable to access to high resolution display and rarely have the required computational power. 
-The common approach in these cases is to store the information on a permanent support for later analisys or send the data live to a more powerful device. This library supports the latter using a client application to render a graphical representation of the transferred data.
+Data plotting can be quite challenging for microcontrollers as those devices are commonly unable to access to the high-resolution display and rarely have the required computational power. 
+The common approach in these cases is to store the information on a permanent support for later analysis or send the data live to a more powerful device. This library supports the latter using a client application to render a graphical representation of the transferred data.
 
 The `PlotPlus` library can either use the Arduino hardware `Serial` (used by default) or any other stream, like `SoftwareSerial` or `Serial2` to send the information to the plotting device.
  
@@ -46,7 +46,7 @@ To avoid to clutter too much the serial console, which is commonly also used for
 Usage
 ============
 
-The library is fully backward compatible with the old SimPlot library, but it also introduces a more modern API.
+The library is fully backwards compatible with the old SimPlot library, but it also introduces a more modern API.
 
 Modern API
 ----------
@@ -72,13 +72,13 @@ The following represents a fully configured example import:
 
 ### Setup
 
-The library does not attempt to mangle with the output stream, meaning you should ensure the streamis properly set **BEFORE** using the `plot(...)` function.
+The library does not attempt to mangle with the output stream, meaning you should ensure the stream is properly set **BEFORE** using the `plot(...)` function.
 
 In case you are going for the *default* setup, this means you should set the serial port speed, but you need to adapt your setup in case of more exotic configurations (`SoftwareSerial`, `Serial2`, etc...)
 
 ``` cpp
 void setup() {
-	Serial.begin(9600);
+  Serial.begin(9600);
 }
 ```
 
@@ -96,22 +96,22 @@ One caveat is you should maintain the channel order and send a channel value eve
 
 ``` cpp
 plot(temperature, humidity);
-	
-// if, later on, you want to also plot luminance, you must also send temperature and humidity
+  
+// if later on, you want to also plot luminance, you must also send temperature and humidity
 plot(temperature, humidity, luminance);
 ```
 
-The API allows to specify the output stream on a per datapoint, allowing to send certain data over one stream and other over another stream, actually expanding the plotting capabilities:
+The API allows to specify the output stream on a per data point, allowing to send certain data over one stream and other over another stream, actually expanding the plotting capabilities:
 
 ``` cpp
 // gyro is sent over Serial
 plotWith(Serial, x, y, z, vx, vy, vz);
-	
+  
 // gps is sent over Serial2
 plotWith(Serial2, latitude, longitude);
-	
+  
 // environment is sent over SoftwareSerial
-plotWith(Soft, temp, humidity, luminance, altitude);	
+plotWith(Soft, temp, humidity, luminance, altitude);  
 ```
 
 
@@ -134,7 +134,7 @@ The library does not attempt to mangle with the output stream, meaning you shoul
 
 ``` cpp
 void setup() {
-	Serial.begin(9600);
+  Serial.begin(9600);
 }
 ```
 
@@ -151,24 +151,24 @@ plot5(output,  data1,  data2,  data3,  data4,  data5);
 plot6(output,  data1,  data2,  data3,  data4,  data5,  data6);
 
 // the most versatile approach is using the simple_plot function
-simple_plot_(output, numData, data1, data2, data3, data4, data5, data6);	
+simple_plot_(output, numData, data1, data2, data3, data4, data5, data6);  
 ```
 
 One caveat is you should maintain the channel order and send a channel value even in case you don't want to update the channel value:
 
 ``` cpp
 plot2(Serial, temperature, humidity);
-	
-// if, later on, you want to also plot luminance, you must also send temperature and humidity
+  
+// if later on, you want to also plot luminance, you must also send temperature and humidity
 plot3(Serial, temperature, humidity, luminance);
 ```
 
-The API allows to specify the output stream on a per datapoint, allowing to send certain data over one stream and other over another stream, actually expanding the plotting capabilities:
+The API allows to specify the output stream on a per data point, allowing to send certain data over one stream and other over another stream, actually expanding the plotting capabilities:
 
 ``` cpp
 // gyro is sent over Serial
 plot6(Serial, x, y, z, vx, vy, vz);
-	
+  
 // gps is sent over Serial2
 plot2(Serial2, latitude, longitude);
 
@@ -179,8 +179,8 @@ plot4(Soft, temp, humidity, luminance, altitude);
 Clients
 ============
 
-My client of choice is [Sloeber](http:///sloeber.io), an Eclipse Plugin providing full development support for Arduino and other MCUs like ESP8266 and similar. This should be also your favorite choice if you are on an OS other than Windows.
+My client of choice is [Sloeber](http:///sloeber.io), an Eclipse Plugin providing full development support for Arduino and other MCUs like ESP8266 and similar. This should be also your favourite choice if you are on an OS other than Windows.
 
-[Sloeber](http:///sloeber.io) has a very nice 6 channels plotter view and the ability to filter out the plotting info from the serial console resulting a very smooth experience.
+[Sloeber](http:///sloeber.io) has a very nice 6 channels plotter view and the ability to filter out the plotting info from the serial console resulting in a very smooth experience.
 
-If you look for something more lightweight then the old [SimPlot client for Windows](https://github.com/infomaniac50/projectsimplot) should satisfy your needs.
+If you look for something more lightweight, then the old [SimPlot client for Windows](https://github.com/infomaniac50/projectsimplot) should satisfy your needs.
