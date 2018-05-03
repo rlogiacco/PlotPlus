@@ -1,3 +1,7 @@
+### &#x26A0; **IMPORTANT**
+ 
+> Please, for support requests use the [PlotPlus Forum](https://arduinolibs.freeflarum.com/t/plotplus), running a search before submitting a new case: do not abuse the Github issue tracker.
+
 PlotPlus [![Build Status][travis-status]][travis]
 =============
 [travis]: https://travis-ci.org/rlogiacco/PlotPlus
