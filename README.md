@@ -1,6 +1,6 @@
 ### &#x26A0; **IMPORTANT**
  
-> Please, for support requests use [Arduino StackExchange](https://arduino.stackexchange.com/questions/tagged/plotplus-lib), ensuring to add the `plotplus-lib` tag to your question: do not abuse the Github issue tracker.
+> Please, before submitting a support request read carefully this README and check if an answer already exists among [previously answered questions](https://github.com/rlogiacco/PlotPlus/issues?q=label:question): do not abuse the Github issue tracker.
 
 PlotPlus [![Build Status][travis-status]][travis]
 =============
@@ -17,17 +17,13 @@ This is an attempt to bring that library back to life while also trying to impro
 
 <!-- toc -->
 
-- [Preamble](#preamble)
-- [Usage](#usage)
-  * [Modern API](#modern-api)
-    + [Import and configure](#import-and-configure)
-    + [Setup](#setup)
-    + [Data plotting](#data-plotting)
-  * [Classical API](#classical-api)
-    + [Import and configure](#import-and-configure-1)
-    + [Setup](#setup-1)
-    + [Data plotting](#data-plotting-1)
-- [Clients](#clients)
+- [&#x26A0; **IMPORTANT**](#x26a0-important)
+- [Import and configure](#import-and-configure)
+- [Setup](#setup)
+- [Data plotting](#data-plotting)
+- [Import and configure](#import-and-configure-1)
+- [Setup](#setup-1)
+- [Data plotting](#data-plotting-1)
 
 <!-- tocstop -->
 
@@ -119,7 +115,7 @@ plotWith(Soft, temp, humidity, luminance, altitude);
 ```
 
 
-Classical API
+Classic API
 ------------------------
 
 The old SimPlot API is fully supported allowing for a smooth transition from SimPlot to PlotPlus.
