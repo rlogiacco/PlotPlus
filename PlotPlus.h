@@ -16,8 +16,8 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef __PLOT_PLUS__
-#define __PLOT_PLUS__
+#ifndef PLOT_PLUS_H_
+#define PLOT_PLUS_H_
 
     #if (defined ARDUINO && (!defined(PLOT_PLUS) || PLOT_PLUS))
         #include <Arduino.h>
@@ -66,4 +66,4 @@
         #define plot(...)
 		#define plotWith(...)
     #endif // PLOT_PLUS
-#endif //__PLOT_PLUS__
+#endif //PLOT_PLUS_H_
