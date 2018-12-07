@@ -17,18 +17,21 @@ This is an attempt to bring that library back to life while also trying to impro
 
 <!-- toc -->
 
-- [&#x26A0; **IMPORTANT**](#x26a0-important)
-- [Import and configure](#import-and-configure)
-- [Setup](#setup)
-- [Data plotting](#data-plotting)
-- [Import and configure](#import-and-configure-1)
-- [Setup](#setup-1)
-- [Data plotting](#data-plotting-1)
+- [Preamble](#preamble)
+- [Usage](#usage)
+  - [Modern API](#modern-api)
+    - [Import and configure](#import-and-configure)
+    - [Setup](#setup)
+    - [Data plotting](#data-plotting)
+  - [Classic API](#classic-api)
+    - [Import and configure](#import-and-configure-1)
+    - [Setup](#setup-1)
+    - [Data plotting](#data-plotting-1)
+- [Clients](#clients)
 
 <!-- tocstop -->
 
-Preamble
-============
+# Preamble
 
 Data plotting can be quite challenging for microcontrollers as those devices are commonly unable to access to the high-resolution display and rarely have the required computational power. 
 The common approach in these cases is to store the information on a permanent support for later analysis or send the data live to a more powerful device. This library supports the latter using a client application to render a graphical representation of the transferred data.
@@ -43,13 +46,11 @@ To avoid to clutter too much the serial console, which is commonly also used for
   | `0xABCD` | 2 bytes | up to 12 bytes  |
 
 
-Usage
-============
+# Usage
 
 The library is fully backwards compatible with the old SimPlot library, but it also introduces a more modern API.
 
-Modern API
-----------
+## Modern API
 
 ### Import and configure
 
@@ -115,8 +116,7 @@ plotWith(Soft, temp, humidity, luminance, altitude);
 ```
 
 
-Classic API
-------------------------
+## Classic API
 
 The old SimPlot API is fully supported allowing for a smooth transition from SimPlot to PlotPlus.
 
@@ -176,8 +176,7 @@ plot2(Serial2, latitude, longitude);
 plot4(Soft, temp, humidity, luminance, altitude);
 ```
 
-Clients
-============
+# Clients
 
 My client of choice is [Sloeber](http:///sloeber.io), an Eclipse Plugin providing full development support for Arduino and other MCUs like ESP8266 and similar. This should be also your favourite choice if you are on an OS other than Windows.
 
