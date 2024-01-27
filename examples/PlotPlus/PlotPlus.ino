@@ -1,5 +1,11 @@
 #include <PlotPlus.h>
 
+#ifndef A0 // esp32 doesn't define analog pins
+#define A0 32
+#define A1 33
+#define A2 34
+#endif
+
 void setup() {
 	Serial.begin(9600);
 }

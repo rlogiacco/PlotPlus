@@ -16,6 +16,12 @@ void setup() {
 	Soft.begin(9600);
 }
 
+#ifndef A0 // esp32 doesn't define analog pins
+#define A0 32
+#define A1 33
+#define A2 34
+#endif
+
 void loop() {
 	delay(500);
 	// plot the first 3 analog pins
